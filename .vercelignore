@@ -1,0 +1,6 @@
+docs
+playwright-report
+test-results
+playwright-tests
+*.test.ts
+*.spec.ts
