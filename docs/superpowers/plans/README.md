@@ -12,7 +12,7 @@ Plans organized by phase. Each phase produces working, testable software on its 
 | 2-A | Foundation — Router-Layer + Multi-Model gateway + DB-schema + Workflow + Benchmarks | `2026-05-20-phase-2-a-foundation.md` | ✅ MERGED 2026-05-20 (PR #16) |
 | 2-B1 | **Free-Shot Funnel** — Examples Gallery + Email-Verify-4-Layer + Anti-Abuse + Wait-Page-Conversion-Trick + GDPR Double-Opt-In + Result Page + Resend Audiences | `2026-05-20-phase-2-b1-free-shot-funnel.md` | ✅ written 2026-05-20 letter-e |
 | 2-B2 | **Stripe Single-Shot** — Payment-Intent + €1/€3 Checkout + Webhook + Refund-on-Workflow-failure + Stripe Tax + Card-Testing-Rate-Limit | `2026-05-21-phase-2-b2-stripe-single-shot.md` | ✅ written 2026-05-21 letter-b (full Plan-Doc, supersedes 2026-05-20 stub) |
-| 2-C | **Pilot-Launch + Landing-Polish + Legal-Pages + Lighthouse-Tuning** — bridge between B2-shipped and 5-pilot-users-in-production. Scope: Lighthouse 95+ across v0.2 routes + Landing-Copy revision post-v0.2-Pricing-Pivot + 5-pilot-user manual onboarding workflow + Legal-Pages bundle (Imprint/Privacy/Terms) + Feedback-Capture mechanism. Absorbs launch-blocker scope from v0.1 `phase-7-hardening.md` + `phase-8-pilot.md` (both archived). | TBD (Plan-Doc next MASCHIN-session) | 🔲 scope-defined 2026-05-24 a per [Spec 2026-05-21 Option B](../specs/2026-05-21-phase-2-c-scope-clarification.md), Plan-Doc not yet written |
+| 2-C | **Pilot-Launch + Landing-Polish + Legal-Pages + Lighthouse-Tuning** — bridge between B2-shipped and 5-pilot-users-in-production. Scope: Lighthouse 95+ across v0.2 routes + Landing-Copy revision post-v0.2-Pricing-Pivot + 5-pilot-user manual onboarding workflow + Legal-Pages bundle (Imprint/Privacy/Terms) + Feedback-Capture mechanism. Absorbs launch-blocker scope from v0.1 `phase-7-hardening.md` + `phase-8-pilot.md` (both archived). | `2026-05-24-phase-2-c-pilot-launch.md` | ✅ written 2026-05-24 letter-b per [Spec 2026-05-21 Option B](../specs/2026-05-21-phase-2-c-scope-clarification.md), Plan-Doc ready for execution (gated on B1+B2 LIVE + 48h-stability) |
 | 3 | Subscription Tier + BYOK + Magic-Link Auth + Dashboard + Newsletter Engine | (rename pending — old `phase-5-dashboard.md` + new file) | 🔲 stub |
 | 5 | (old "Dashboard + Paid Flows" — superseded by 2-B2 + 3) | `phase-5-dashboard.md` | 🔲 v0.1-stub, scope absorbed into 2-B2 + Phase 3 |
 | 6 | Scoring Calibration — eval set, calibration runs, weight adjustments | `phase-6-calibration.md` | 🔲 stub |
@@ -36,6 +36,10 @@ Plans organized by phase. Each phase produces working, testable software on its 
 4. Execute via either:
    - `superpowers:subagent-driven-development` — fresh subagent per task with review checkpoints (recommended for production work)
    - `superpowers:executing-plans` — inline batch execution with checkpoints
+
+## Plan-Doc Template
+
+For new Plan-Doc authors: start from the phase-gated TDD-disciplined template — **[`_template-phase-gated-tdd.md`](./_template-phase-gated-tdd.md)** (v1, extracted 2026-05-24 from n=5 empirical Plan-Docs). The template documents both the phase-gated PRIMARY shape (Phase 0 + 1-N + Final, used in B1 + B2 + dev-env) and the task-numbered FALLBACK shape (Tasks 1-N, used in Phase-1 + Phase-2-A foundation work). Read the template's "How To Use This Template" section + "When to use phase-gated PRIMARY vs task-numbered FALLBACK" guidance before deciding which shape applies to your work-class. **Template-Promote is Plan-Doc-class (reversible-by-re-write), does NOT count as a Decision-Lock per `lock_tracking` rule.**
 
 ## When to Write the Next Plan
 
